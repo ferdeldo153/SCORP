@@ -1,0 +1,154 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1376256 bytes for offset table expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (blockOffsetTable.cpp:83), pid=128, tid=3972
+#
+# JRE version:  (8.0_11-b12) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.11-b03 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01e3c000):  JavaThread "Unknown thread" [_thread_in_vm, id=3972, stack(0x01da0000,0x01df0000)]
+
+Stack: [0x01da0000,0x01df0000],  sp=0x01def4d4,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19231b]
+V  [jvm.dll+0x18b438]
+V  [jvm.dll+0x84055]
+V  [jvm.dll+0x845b5]
+V  [jvm.dll+0x8e838]
+V  [jvm.dll+0x998bd]
+V  [jvm.dll+0x8ebe9]
+V  [jvm.dll+0x8d68b]
+V  [jvm.dll+0x9b886]
+V  [jvm.dll+0x140ac4]
+V  [jvm.dll+0x164898]
+V  [jvm.dll+0xd8d11]
+C  [java.exe+0x13c1]
+C  [java.exe+0x1e78]
+C  [java.exe+0xab81]
+C  [java.exe+0xac0b]
+C  [KERNEL32.DLL+0x17ad]
+C  [ntdll.dll+0x3db0e]
+C  [ntdll.dll+0x3dae7]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01e3c000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3972, stack(0x01da0000,0x01df0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00c40000 - 0x00c70000 	C:\Program Files\Java\jdk1.8.0_11\bin\java.exe
+0x77460000 - 0x775c5000 	C:\Windows\SYSTEM32\ntdll.dll
+0x75820000 - 0x75919000 	C:\Windows\system32\KERNEL32.DLL
+0x751b0000 - 0x75282000 	C:\Windows\system32\KERNELBASE.dll
+0x73e70000 - 0x73f09000 	C:\Windows\system32\apphelp.dll
+0x60350000 - 0x605a9000 	C:\Windows\AppPatch\AcGenral.DLL
+0x759f0000 - 0x75aae000 	C:\Windows\system32\msvcrt.dll
+0x75610000 - 0x7564e000 	C:\Windows\SYSTEM32\sechost.dll
+0x74d20000 - 0x74d42000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x75290000 - 0x752d1000 	C:\Windows\system32\SHLWAPI.dll
+0x73f50000 - 0x74031000 	C:\Windows\SYSTEM32\UxTheme.dll
+0x754c0000 - 0x7560b000 	C:\Windows\system32\USER32.dll
+0x772d0000 - 0x773d9000 	C:\Windows\system32\GDI32.dll
+0x6f700000 - 0x6f720000 	C:\Windows\SYSTEM32\WINMM.dll
+0x6cd80000 - 0x6cd92000 	C:\Windows\SYSTEM32\samcli.dll
+0x77020000 - 0x7712c000 	C:\Windows\system32\ole32.dll
+0x77130000 - 0x771b7000 	C:\Windows\system32\OLEAUT32.dll
+0x609d0000 - 0x609e5000 	C:\Windows\SYSTEM32\MSACM32.dll
+0x6fc70000 - 0x6fc78000 	C:\Windows\SYSTEM32\VERSION.dll
+0x75df0000 - 0x76fb1000 	C:\Windows\system32\SHELL32.dll
+0x746d0000 - 0x746e9000 	C:\Windows\SYSTEM32\USERENV.dll
+0x73750000 - 0x73768000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x6ca80000 - 0x6cbac000 	C:\Windows\SYSTEM32\urlmon.dll
+0x771c0000 - 0x77238000 	C:\Windows\system32\ADVAPI32.dll
+0x6f7b0000 - 0x6f80e000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x6fb00000 - 0x6fb14000 	C:\Windows\SYSTEM32\MPR.dll
+0x75920000 - 0x759e4000 	C:\Windows\system32\RPCRT4.dll
+0x75ca0000 - 0x75dee000 	C:\Windows\SYSTEM32\combase.dll
+0x6f6e0000 - 0x6f700000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x74ea0000 - 0x74eae000 	C:\Windows\SYSTEM32\profapi.dll
+0x6c860000 - 0x6ca7b000 	C:\Windows\SYSTEM32\iertutil.dll
+0x6c690000 - 0x6c852000 	C:\Windows\SYSTEM32\WININET.dll
+0x74f20000 - 0x74f5a000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x74080000 - 0x7409f000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x75650000 - 0x756c6000 	C:\Windows\system32\SHCORE.DLL
+0x77240000 - 0x77265000 	C:\Windows\system32\IMM32.DLL
+0x752e0000 - 0x753d7000 	C:\Windows\system32\MSCTF.dll
+0x72530000 - 0x72716000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_a9efdb8b01377ea7\COMCTL32.dll
+0x5da40000 - 0x5daff000 	C:\Program Files\Java\jdk1.8.0_11\jre\bin\msvcr100.dll
+0x5db00000 - 0x5de97000 	C:\Program Files\Java\jdk1.8.0_11\jre\bin\client\jvm.dll
+0x6fc20000 - 0x6fc28000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x77010000 - 0x77016000 	C:\Windows\system32\PSAPI.DLL
+0x76fc0000 - 0x7700d000 	C:\Windows\system32\WS2_32.dll
+0x75ab0000 - 0x75ab7000 	C:\Windows\system32\NSI.dll
+0x6d510000 - 0x6d51c000 	C:\Program Files\Java\jdk1.8.0_11\jre\bin\verify.dll
+0x69a90000 - 0x69ab1000 	C:\Program Files\Java\jdk1.8.0_11\jre\bin\java.dll
+0x6d320000 - 0x6d333000 	C:\Program Files\Java\jdk1.8.0_11\jre\bin\zip.dll
+0x6c390000 - 0x6c4d8000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xms1000m -Djava.security.policy=applet.policy 
+java_command: Scorp.Scorp
+java_class_path (initial): C:\Program Files\NetBeans 8.0.2\java\modules\ext\beansbinding-1.2.1.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\librerias\jcommon-1.0.17.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\librerias\jfreechart-1.0.14.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\librerias\jxl.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\librerias\jmathplot.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\librerias\com.JDendo.jar;C:\Users\home\Documents\NetBeansProjects\Scorp\build\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_11
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\TXE Components\TCS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\GtkSharp\2.12\bin;C:\opencv;C:\opencv\build;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files\MiKTeX 2.9\miktex\bin\;C:\Program Files\nodejs\;C:\Program Files\MATLAB\R2008a\bin;C:\Program Files\MATLAB\R2008a\bin\win32;C:\Program Files\Intel\TXE Components\TCS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\GtkSharp\2.12\bin;C:\opencv;C:\opencv\build;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files\MiKTeX 2.9\miktex\bin\;C:\Users\home\AppData\Roaming\npm
+USERNAME=home
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 55 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 Build 9600 
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 55 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, aes, clmul, erms, tsc, tscinvbit
+
+Memory: 4k page, physical 1979620k(369364k free), swap 3413220k(5260k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.11-b03) for windows-x86 JRE (1.8.0_11-b12), built on Jun 16 2014 18:18:58 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Feb 18 18:24:08 2016
+elapsed time: 0 seconds
+
